@@ -9,7 +9,9 @@ catalog: true                       # 是否归档
 tags:                               #标签
     - Algorithm
 ---
+This is a classical algorithm question. The problem askes us to rotate the matrix by 90 degrees. The important thing to realize here is what rotating means. Here rotating means, the first row will become the last column. The second row will become the second last column. 
 
+To make the algorithm in place. We have two choices. The first is to use transpose, because we know transposing means to make the first row the first column. And after transposing, we can flip the matrix horizontally. (first column becomes the last column)
 
         class Solution:
             def rotate(self, matrix: List[List[int]]) -> None:
