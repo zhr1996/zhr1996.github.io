@@ -6,28 +6,31 @@ date: 2021-07-06
 author: Haoran
 header-img: img/post-bg-2015.jpg
 catalog: true
-tags: 
+tags:
   - Leetcode
   - Algorithm
   - Daily Challenge
 ---
 
-
 ## Problem
-Given an array arr.  You can choose a set of integers and remove all the occurrences of these integers in the array.
+
+Given an array arr. You can choose a set of integers and remove all the occurrences of these integers in the array.
 
 Return the minimum size of the set so that at least half of the integers of the array are removed.
 
 1 <= arr.length <= 10^5
 arr.length is even.
 1 <= arr[i] <= 10^5
+
 ## Thinking
-* Make a hash table of all the numbers in list. Key: Number, Value: Occurence.
 
-* Sort the hash table with the values, and then add on the values until the sum is greater or equal to half the size of the list
+- Make a hash table of all the numbers in list. Key: Number, Value: Occurence.
 
-* Use sorted function
-    * sorted(iterable, function, reverse)
+- Sort the hash table with the values, and then add on the values until the sum is greater or equal to half the size of the list
+
+- Use sorted function
+  - sorted(iterable, function, reverse)
+
 ```python
 from typing import List
 from collections import defaultdict
